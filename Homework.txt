@@ -1,1 +1,45 @@
-I've learned the following Git commands:
+Learned Git commands:
+
+Tell Git who you are
+- git config --global user.name "Shushan Harutyunyan"
+- git config --global user.email shushanharutyunyan92@gmail.com
+
+Create a new local repository
+- git init
+
+Create a working copy of a local repository
+- git clone /path/to/repository
+- git clone username@host:/path/to/repository (use for a remote server)
+
+Commit
+- git commit -m "Commit messege" (Commit changes to head (but not yet to the remote repository)
+- git commit -a (Commit any files you've added with git add, and also commit any files you've changed since then)
+
+Push
+- git push origin master(Send changes to the master branch of your remote repository)
+
+Status
+- git status (List the files you've changed and those you still need to add or commit)
+
+
+Add files
+- git add <filename> - adds one file
+- git add * - adds multiple files
+
+Connect to a remote repository
+- git remote add origin <server> (If you haven't connected your local repository to a remote server, add the server to be able to push to it)
+- git remote -v (List all currently configured remote repositories)
+
+Branches
+- git checkout -b <branchname> (Create a new branch and switch to it)
+- git checkout <branchname> (Switch from one branch to another)
+- git branch (List all the branches in your repo, and also tell you what branch you're currently in)
+- git branch -d <branchname> (Delete the feature branch)
+- git push origin <branchname> (Push the branch to your remote repository, so others can use it)
+- git push --all origin (Push all branches to your remote repository)
+- git push origin :<branchname> (Delete a branch on your remote repository)
+
+Update from the remote repository
+- git pull (Fetch and merge changes on the remote server to your working directory)
+- git merge <branchname> (To merge a different branch into your active branch)
+
